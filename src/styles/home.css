@@ -1,0 +1,123 @@
+#home {
+    display: flex;
+    min-height: calc(100vh - 90px);
+    position: relative;
+}
+
+#cta{
+   width: 35%;
+   display: flex;
+   flex-direction: column;
+   gap: 28px;
+   margin-top:5%; 
+}
+
+#cta .title{
+    font-size: 2rem;
+    color:black
+}
+#liv .titlesessoes{
+    font-size:40rem;
+    color:black;
+    align-items: center;
+    justify-content: center;
+}
+
+#cta .title span{
+    color: #4d437c;
+}
+
+#cta .description{
+    font-size: 1.2rem;
+}
+#cta_buttons{
+    display: flex;
+    gap: 24px;
+}
+
+#cta_buttons a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#phone_button{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    background-color: #ffffff ;
+    padding: 8px 14px;
+    font-weight: 500;
+    box-shadow: 0px 0px 12px 4px rpg(0,0,0,0.1);
+    border-radius: 12px;
+}
+#banner {
+    max-width: 450px; /* Reduzindo um pouco mais o tamanho da imagem */
+    width: 100%;
+}
+
+#banner img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+#home {
+    display: flex;
+    align-items: center; /* Alinha verticalmente */
+    justify-content: center; /* Centraliza os elementos */
+    flex-wrap: wrap; /* Permite que os elementos quebrem linha em telas menores */
+    gap: 40px; /* Espaço entre o texto e a imagem */
+    padding: 40px 20px;
+}
+
+#cta {
+    max-width: 450px; /* Limita a largura do texto */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+#banner {
+    max-width: 400px; /* Ajusta o tamanho da imagem */
+    width: 100%;
+}
+
+#banner img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    #home {
+        flex-direction: column; /* Empilha os elementos em telas menores */
+        text-align: center;
+    }
+
+    #cta {
+        text-align: center; /* Centraliza o texto no mobile */
+    }
+}
+#banner{
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    width: 70%;
+    z-index: 2;
+  }
+
+  #banner{
+    height: 100%;
+    width: fit-content;
+  }
+.shape{
+  background-color: #4d437c;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  border: 40% 30% 0% 20%;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}

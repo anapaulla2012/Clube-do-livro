@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clube do Livro</title>
+    
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="stylesheet" href="src/styles/header.css">
+    <link rel="stylesheet" href="src/styles/home.css">
+    <link rel="stylesheet" href="src/styles/encontros.scss">
+    <link rel="stylesheet" href="src/styles/livros.scss">
+    <link rel="stylesheet" href="src/styles/forms.css">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <nav Id="navbar">
+            <i class="fa-solid fa-book" id="logo">Clube do Livro</i>
+            <ul Id="nav_list">
+                <li class="nav-item active">
+                    <a href="#home">Ínicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#encontros">Encontros</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#livros">Livros</a>
+                </li>
+            </ul>
+
+            <button class="btn-default">
+                Inscreva-se 
+            </button>
+
+            <button id="mobile_btn" >
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+        
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item active">
+                    <a href="#home">Ínicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#encontros">Encontros</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#livros">Livros</a>
+                </li>
+                <li class="nav-item">
+            </ul>
+            <button class="btn-default">
+                Inscreva-se
+            </button>
+        </div>
+    </header>
+
+    <main id="content">
+        <section id="home">
+            <div id="cta">
+                <h1 class="title">
+                    Um livro é uma porta para mil mundos.
+                    <span> Bem-vindo ao nosso clube!</span>
+                </h1>
+                <p class="description">
+                    Nosso clube do livro é um espaço para compartilhar histórias e incentivar a leitura.
+                    A cada mês, exploramos um novo livro juntos e trocamos experiências. Venha ler com a gente!
+                </p>
+                <div id="cta_buttons">
+                    <a href="#" class="btn-default"> Faça parte do nosso grupo </a>
+                </div>
+                <div class="social-media-button">
+                    <a href="">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+            <div id="banner">
+                <img src="src/images/banner.jpeg" alt="">
+
+            </div>
+        </section>
+
+        <section id="encontros" class="text-center">
+            <h1 id="title">Nossos encontros</h1>
+            <div id="carouselExampleControls" class="carousel slide d-flex justify-content-center" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="img-fluid" src="src/images/primeiro encontro.jpeg" alt="Primeiro Slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="img-fluid" src="src/images/segundo encontro.jpeg" alt="Segundo Slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="img-fluid" src="src/images/terceiro encontro.jpeg" alt="Terceiro Slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="img-fluid" src="src/images/quarto encontro.jpeg" alt="Quarto Slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="img-fluid" src="src/images/quinto encontro.jpeg" alt="Quinto Slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
+            </div>
+        </section>
+        
+        <section id="livros" class="text-center">
+            <div class="liv">
+            <h1 id="titlesessoes">Livros</h1>
+            <p></p>
+            <div class="card-group">
+                <div class="card">
+                  <img src="src/images/biblioteca.png" class="img-fluid mx-auto d-block" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Livro de Novembro</h5>
+                    <p class="card-text">Realizamos a leitura do livro 'A biblioteca da meia noite'.</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="src/images/portobello.png" class="img-fluid mx-auto d-block" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Livro de Dezembro</h5>
+                    <p class="card-text">Realizamos a leitura do livro 'A bruxa de Portobello'.</p>
+                  </div>
+                </div>
+                <div class="card">
+                    <img src="src/images/janeiro.png" class="img-fluid mx-auto d-block" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Livro de Janeiro</h5>
+                      <p class="card-text">Cada um leu o livro que ganhou no amigo secreto.</p>
+                  </div>
+                </div>
+                <div class="card">
+                    <img src="src/images/desenvolvimento.png" class="img-fluid mx-auto d-block" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Livro de Fevereiro</h5>
+                      <p class="card-text">Cada um realizou a leitura de um livro de desenvolvimento pessoal.</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="src/images/verity.png" class="img-fluid mx-auto d-block" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Livro de Março</h5>
+                    <p class="card-text">Realizamos a leitura do livro 'Verity'.</p>
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <footer class="bg-body-tertiary text-center">
+            <!-- Grid container -->
+            <div class="container p-4"></div>
+            <!-- Grid container -->
+          
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+              © 2025 Ana Paula Rampanelli
+              <br>
+              Todos os direitos reservados.
+              <a class="text-body" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+            </div>
+            <!-- Copyright -->
+          </footer>
+
+    </main>
+
+    <main>
+        <section id="formulario-inscricao" class="hidden">
+            <div class="container">
+                <h2>Inscreva-se no Clube do Livro</h2>
+                <form id="inscricao-form">
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone" class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </section>        
+    </main>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="src/javascript/script.js"></script>
+</body>
+</html>
